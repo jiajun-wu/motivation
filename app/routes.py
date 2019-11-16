@@ -10,7 +10,7 @@ def webhook():
     challenge = request.args.get('hub.challenge')
     verify_token = request.args.get('hub.verify_token')
 
-    if (mode === "subscribe" && token === VERIFY_TOKEN) {
+    if (mode === "subscribe" && verify_token === VERIFY_TOKEN) {
       // Responds with the challenge token from the request
       console.log("WEBHOOK_VERIFIED");
       res.status(200).send(challenge);
