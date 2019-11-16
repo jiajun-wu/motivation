@@ -1,6 +1,7 @@
 from app import app
 from flask import Flask, json, jsonify
-from flask import request, requests, Response
+from flask import request, Response
+import requests
 
 
 pg_id = '110330053759491'
