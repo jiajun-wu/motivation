@@ -7,7 +7,7 @@ def webhook():
     VERIFY_TOKEN = 'fbsfhachatohon2019'
     challenge = request.args.get('hub.challenge')
     print challenge
-    return challenge
+    return 'here'
 
 @app.route('/index')
 def index():
