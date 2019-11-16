@@ -134,7 +134,23 @@ def callSendAPI(sender_psid, response):
 def switch_payload(payload):
     payload_json = ''
     if payload == 'music':
-        pass
+        payload_json = {
+            "attachment":{
+              "type":"template",
+              "payload":{
+                "template_type":"button",
+                "text":"Try the URL button!",
+                "buttons":[
+                  {
+                    "type":"web_url",
+                    "url":"https://www.google.com/",
+                    "title":"URL Button",
+                    "webview_height_ratio": "full"
+                  }
+                ]
+              }
+            }
+        }
     elif payload == 'cooking':
         pass
     elif payload == 'art':
