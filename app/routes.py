@@ -76,17 +76,18 @@ def handleMessage(sender_psid, received_message):
         response = {
           "text": res_text,
           "quick_replies":[
-          {
-            "content_type":"text",
-            "title":"music",
-            # "payload":"<POSTBACK_PAYLOAD>",
-            "image_url":"http://example.com/img/red.png"
-          },{
-            "content_type":"text",
-            "title":"video",
-            # "payload":"<POSTBACK_PAYLOAD>",
-            "image_url":"http://example.com/img/green.png"
-          }
+              {
+                "content_type":"text",
+                "title":"music",
+                # "payload":"<POSTBACK_PAYLOAD>",
+                "image_url":"http://example.com/img/red.png"
+              },{
+                "content_type":"text",
+                "title":"video",
+                # "payload":"<POSTBACK_PAYLOAD>",
+                "image_url":"http://example.com/img/green.png"
+              }
+          ]
         }
         callSendAPI(sender_psid, response)
         print(response)
