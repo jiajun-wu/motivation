@@ -89,4 +89,4 @@ def callSendAPI(sender_psid, response):
         "qs": { "access_token": PAGE_ACCESS_TOKEN },
         "method": "POST",
         "json": request_body
-    }
+    }, 200
