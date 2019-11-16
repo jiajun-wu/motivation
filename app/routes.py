@@ -162,8 +162,8 @@ def switch_payload(payload):
             }
         }
     elif payload == 'cooking':
-        res_text = 'there we go for other options'
-        payload_json =
+        res_text = 'here we go for other options'
+        payload_json = {
           "text": res_text,
           "quick_replies":[
               {
