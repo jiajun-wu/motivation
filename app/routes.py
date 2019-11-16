@@ -1,5 +1,6 @@
 from app import app
-from flask import request
+from flask import Flask, json, jsonify
+from flask import request,Response
 
 @app.route('/')
 
@@ -15,15 +16,16 @@ def webhook():
     print(verify_token)
 
 
-    if (mode === "subscribe" && verify_token === VERIFY_TOKEN) {
-      // Responds with the challenge token from the request
-      # console.log("WEBHOOK_VERIFIED");
-      response.status(200).send(challenge);
-    } else {
-      // Responds with '403 Forbidden' if verify tokens do not match
-      response.sendStatus(403);
-    }
-    return 'here'
+    if (mode == "subscribe" and verify_token == VERIFY_TOKEN):
+      # Responds with the challenge token from the request
+      print("WEBHOOK_VERIFIED")
+      # response.jsonify(challenge), 200
+      return challenge, 200
+    else:
+        return 'no'
+      # Responds with '403 Forbidden' if verify tokens do not match
+      # response.sendStatus(403)
+    # return 'here'
 
 @app.route('/index')
 def index():
