@@ -167,6 +167,62 @@ def switch_payload(payload):
                         "webview_height_ratio": "full"
                       }
                     ]
+                    },
+                    {
+                    "title":"Welcome!",
+                    "image_url":"https://petersfancybrownhats.com/company_image.png",
+                    "subtitle":"We have the right hat for everyone.",
+                    "default_action": {
+                      "type": "web_url",
+                      "url": "https://petersfancybrownhats.com/view?item=103",
+                      "webview_height_ratio": "tall",
+                    },
+                    "buttons":[
+                      {
+                        "type":"web_url",
+                        "url":"https://www.google.com/",
+                        "title":"1",
+                        "webview_height_ratio": "full"
+                      },{
+                        "type":"web_url",
+                        "url":"https://www.google.com/",
+                        "title":"2",
+                        "webview_height_ratio": "full"
+                      },{
+                        "type":"web_url",
+                        "url":"https://www.google.com/",
+                        "title":"3",
+                        "webview_height_ratio": "full"
+                      }
+                    ]
+                    },
+                    {
+                    "title":"Welcome!",
+                    "image_url":"https://petersfancybrownhats.com/company_image.png",
+                    "subtitle":"We have the right hat for everyone.",
+                    "default_action": {
+                      "type": "web_url",
+                      "url": "https://petersfancybrownhats.com/view?item=103",
+                      "webview_height_ratio": "tall",
+                    },
+                    "buttons":[
+                      {
+                        "type":"web_url",
+                        "url":"https://www.google.com/",
+                        "title":"1",
+                        "webview_height_ratio": "full"
+                      },{
+                        "type":"web_url",
+                        "url":"https://www.google.com/",
+                        "title":"2",
+                        "webview_height_ratio": "full"
+                      },{
+                        "type":"web_url",
+                        "url":"https://www.google.com/",
+                        "title":"3",
+                        "webview_height_ratio": "full"
+                      }
+                    ]
                     }
                 ]
               }
