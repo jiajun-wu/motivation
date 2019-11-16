@@ -44,7 +44,7 @@ def webhook():
             print('request.json: ',request.json.get('object'))
 
 
-            for (e in entry):
+            for e in entry:
                 webhook_event = e.get('messaging')[0]
                 sender_psid = webhook_event.get('sender').get('id')
             # get_sender_id(entry[0].get('messaging')[0].get('sender').get('id'))
