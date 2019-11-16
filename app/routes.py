@@ -39,12 +39,15 @@ def webhook():
         if json_obj == 'page':
             entry = request.json.get('entry')
 
-            print('request.data: ',request.data)
+            print('-----entry:', entry)
+
             print('request.json: ',request.json.get('object'))
 
             webhook_event = entry[0].get('messaging')[0]
             sender_psid = webhook_event.get('sender').get('id')
             # get_sender_id(entry[0].get('messaging')[0].get('sender').get('id'))
+
+            print('-'*100)
 
             if webhook_event.get('message'):
                 handleMessage(sender_psid, webhook_event.get('message'))
@@ -93,7 +96,7 @@ def callSendAPI(sender_psid, response):
     # "messaging_type": "response",
     # json=request_body)
 
-    r = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD", json={"recipient": {"id": 2484394754962860},"messaging_type": "response","message": {"text": "im back"}})
+    # r = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD", json={"recipient": {"id": 2484394754962860},"message": {"text": "im back"}})
 
     # print(r)
     # print(r.json())
