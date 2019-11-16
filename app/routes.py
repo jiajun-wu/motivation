@@ -162,8 +162,54 @@ def switch_payload(payload):
             }
         }
     elif payload == 'cooking':
-        pass
+        payload_json = {
+          "text": res_text,
+          "quick_replies":[
+              {
+                "content_type":"text",
+                "title":"A",
+                "payload":"a"
+              },{
+                "content_type":"text",
+                "title":"B",
+                "payload":"b"
+              },{
+                "content_type":"text",
+                "title":"C",
+                "payload":"c"
+              }
+          ]
+        }
     elif payload == 'art':
         pass
+
+    elif payload == 'a':
+        payload_json = {
+            "attachment":{
+              "type":"template",
+              "payload":{
+                "template_type":"button",
+                "text":"under cooking card!",
+                "buttons":[
+                  {
+                    "type":"web_url",
+                    "url":"https://www.google.com/",
+                    "title":"URL Button",
+                    "webview_height_ratio": "full"
+                  },{
+                    "type":"web_url",
+                    "url":"https://www.google.com/",
+                    "title":"URL Button",
+                    "webview_height_ratio": "full"
+                  },{
+                    "type":"web_url",
+                    "url":"https://www.google.com/",
+                    "title":"URL Button",
+                    "webview_height_ratio": "full"
+                  }
+                ]
+              }
+            }
+        }
 
     return payload_json
