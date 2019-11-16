@@ -4,7 +4,7 @@ from flask import request,Response
 
 @app.route('/')
 
-@app.route('/webhook')
+@app.route('/webhook', methond=['GET'])
 def webhook():
     VERIFY_TOKEN = 'fbsfhachatohon2019'
     mode = request.args.get('hub.mode')
@@ -23,7 +23,7 @@ def webhook():
       # response.jsonify(challenge), 200
       return challenge, 200
     else:
-        return 'no'
+        return 403
       # Responds with '403 Forbidden' if verify tokens do not match
       # response.sendStatus(403)
     # return 'here'
