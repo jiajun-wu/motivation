@@ -43,16 +43,18 @@ def webhook():
 
             print('request.json: ',request.json.get('object'))
 
-            webhook_event = entry[0].get('messaging')[0]
-            sender_psid = webhook_event.get('sender').get('id')
+
+            for (e in entry):
+                webhook_event = e.get('messaging')[0]
+                sender_psid = webhook_event.get('sender').get('id')
             # get_sender_id(entry[0].get('messaging')[0].get('sender').get('id'))
 
-            print('-'*100)
+                print('-'*100)
 
-            if webhook_event.get('message'):
-                handleMessage(sender_psid, webhook_event.get('message'))
-            elif (webhook_event.get('postback')):
-                handlePostback(sender_psid, webhook_event.get('postback'))
+                if webhook_event.get('message'):
+                    handleMessage(sender_psid, webhook_event.get('message'))
+                elif (webhook_event.get('postback')):
+                    handlePostback(sender_psid, webhook_event.get('postback'))
 
             return 'EVENT_RECEIVED', 200
         else:
@@ -81,6 +83,7 @@ def handlePostback(sender_psid, received_postback):
     pass
 
 def callSendAPI(sender_psid, response):
+    print('---callSendAPI\n')
     request_body = {
         "recipient": {
             "id": sender_psid
