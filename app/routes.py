@@ -97,3 +97,5 @@ def callSendAPI(sender_psid, response):
 
     print(r)
     print(r.json())
+
+    return r
