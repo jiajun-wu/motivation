@@ -11,7 +11,7 @@ module.exports = class Response {
 
         return response;
     }
-    static genListReply(title, ) {
+    static genListReply() {
         let response = {
             attatchment: {
                 type: "template",
