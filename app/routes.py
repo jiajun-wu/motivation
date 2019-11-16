@@ -146,6 +146,16 @@ def switch_payload(payload):
                     "url":"https://www.google.com/",
                     "title":"URL Button",
                     "webview_height_ratio": "full"
+                  },{
+                    "type":"web_url",
+                    "url":"https://www.google.com/",
+                    "title":"URL Button",
+                    "webview_height_ratio": "full"
+                  },{
+                    "type":"web_url",
+                    "url":"https://www.google.com/",
+                    "title":"URL Button",
+                    "webview_height_ratio": "full"
                   }
                 ]
               }
