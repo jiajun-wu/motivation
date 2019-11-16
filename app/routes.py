@@ -94,7 +94,7 @@ def handleMessage(sender_psid, received_message):
 
     if received_message.get('text') and received_message.get('quick_reply'):
         payload = received_message.get('quick_reply').get('payload')
-        switch_payload(payload)
+        # switch_payload(payload)
         res_text = 'here are options for you'
         response = switch_payload(payload)
 
