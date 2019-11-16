@@ -10,6 +10,7 @@ def webhook():
     mode = request.args.get('hub.mode')
     challenge = request.args.get('hub.challenge')
     verify_token = request.args.get('hub.verify_token')
+    PAGE_ACCESS_TOKEN = "EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD"
 
     print(mode)
     print(challenge)
