@@ -3,7 +3,7 @@ from flask import Flask, json, jsonify
 from flask import request, Response
 import requests
 
-
+# r_id=2484394754962860
 pg_id = '110330053759491'
 PAGE_ACCESS_TOKEN = 'EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD'
 
@@ -78,21 +78,35 @@ def handleMessage(sender_psid, received_message):
           "quick_replies":[
               {
                 "content_type":"text",
-                "title":"music",
-                # "payload":"<POSTBACK_PAYLOAD>",
-                "image_url":"http://example.com/img/red.png"
+                "title":"Music",
+                "payload":"music"
               },{
                 "content_type":"text",
-                "title":"video",
-                # "payload":"<POSTBACK_PAYLOAD>",
-                "image_url":"http://example.com/img/green.png"
+                "title":"Cooking",
+                "payload":"cooking"
+              },{
+                "content_type":"text",
+                "title":"Art",
+                "payload":"art"
               }
           ]
         }
-        callSendAPI(sender_psid, response)
-        print(response)
+
+    if received_message.get('text') and received_message.get('quick_reply'):
+        payload = received_message.get('quick_reply').get('payload')
+        switch_payload(payload)
+        res_text = 'here are options for you'
+        response = switch_payload(payload)
+
+        print('\nim in the quick_reply\n')
+
+
+
+    callSendAPI(sender_psid, response)
+
 
 def handlePostback(sender_psid, received_postback):
+    print('\n-------handlePostback\n')
     pass
 
 def callSendAPI(sender_psid, response):
@@ -106,13 +120,24 @@ def callSendAPI(sender_psid, response):
 
     print(sender_psid)
     print(request_body)
-    print('I am here2')
 
-    r = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD",json=request_body)
+    r = requests.post("https://graph.facebook.com/v5.0/me/messages?access_token=EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD",json=request_body)
 
     # r = requests.post("https://graph.facebook.com/v5.0/me/messages?access_token=EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD", json={"recipient": {"id": sender_psid},"message": {"text": "im back"}})
 
     print(r)
     print(r.json())
 
-    # return r
+
+
+
+def switch_payload(payload):
+    payload_json = ''
+    if payload == 'music':
+        pass
+    elif payload == 'cooking':
+        pass
+    elif payload == 'art':
+        pass
+
+    return payload_json
