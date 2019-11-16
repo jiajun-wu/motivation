@@ -1,5 +1,5 @@
 from app import app
-from flask import request, response
+from flask import request, Response
 
 @app.route('/')
 @app.route('/webhook', methods=['GET'])
