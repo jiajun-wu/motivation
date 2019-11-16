@@ -58,7 +58,7 @@ def webhook():
 
             return 'EVENT_RECEIVED', 200
         else:
-            return 404
+            return 200
 
 @app.route('/index')
 def index():
@@ -93,15 +93,15 @@ def callSendAPI(sender_psid, response):
 
     print(sender_psid)
     print(request_body)
-
+    print('I am here')
 
     # r = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD",
     # "messaging_type": "response",
     # json=request_body)
 
-    # r = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD", json={"recipient": {"id": 2484394754962860},"message": {"text": "im back"}})
+    r = requests.post("https://graph.facebook.com/v5.0/me/messages?access_token=EAALcUGICU5cBAL9aAExF6kCqSNzvreSOsmRBYy4tDZA5RaZCrxsZBnVtZB87IRRD2GvoSWVxIaGRg6vTsWBRvZCdyeFOT6jhuJViPyCtuyq88DGf4MHYShisme9wRJv4Bdkn6YwTzZCCUMsovhIjd8RFiG8K7INHPx1J37o4LAMAZDZD", json={"recipient": {"id": 2484394754962860},"message": {"text": "im back"}})
 
-    # print(r)
-    # print(r.json())
+    print(r)
+    print(r.json())
 
     # return r
