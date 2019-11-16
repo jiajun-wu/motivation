@@ -63,19 +63,25 @@ module.exports = class Curation {
                 ]);
                 break;
             case "CURRATION_PIANO":
-                response = Response.genListReply();
+                //list
                 break;
             case "CURRATION_GUITAR":
+                //list
                 break;
             case "CURRATION_ASIAN":
+                //list
                 break;
             case "CURRATION_EUROPEAN":
+                //list
                 break;
             case "CURRATION_AMERICAN":
+                //list
                 break;
             case "CURRATION_PENCIL":
+                //list
                 break;
             case "CURRATION_PAINT":
+                //list
                 break;
 
         }
