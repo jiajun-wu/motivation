@@ -84,7 +84,7 @@ def callSendAPI(sender_psid, response):
         "message": response
     }
 
-    return Response({
+    return ({
         "uri": "https://graph.facebook.com/v2.6/me/messages",
         "qs": { "access_token": PAGE_ACCESS_TOKEN },
         "method": "POST",
