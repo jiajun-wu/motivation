@@ -1,12 +1,13 @@
 from app import app
-from flask import request, Response
+from flask import request
 
 @app.route('/')
-@app.route('/webhook', methods=['GET'])
+
+@app.route('/webhook')
 def webhook():
     VERIFY_TOKEN = 'fbsfhachatohon2019'
     challenge = request.args.get('hub.challenge')
-    print challenge
+    # print challenge
     return 'here'
 
 @app.route('/index')
