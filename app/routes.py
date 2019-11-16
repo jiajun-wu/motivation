@@ -72,9 +72,21 @@ def get_sender_id(in_text):
 def handleMessage(sender_psid, received_message):
     if (received_message.get('text')):
         # Create the payload for a basic text message
-        res_text = 'You sent the message: {}. Now send me an image!'.format(received_message.get('text'))
+        res_text = '{}! What do you want to learn? Please choose one!'.format(received_message.get('text'))
         response = {
-          "text": res_text
+          "text": res_text,
+          "quick_replies":[
+          {
+            "content_type":"text",
+            "title":"music",
+            # "payload":"<POSTBACK_PAYLOAD>",
+            "image_url":"http://example.com/img/red.png"
+          },{
+            "content_type":"text",
+            "title":"video",
+            # "payload":"<POSTBACK_PAYLOAD>",
+            "image_url":"http://example.com/img/green.png"
+          }
         }
         callSendAPI(sender_psid, response)
         print(response)
