@@ -159,16 +159,6 @@ def switch_payload(payload):
                         "url":"https://www.google.com/",
                         "title":"1",
                         "webview_height_ratio": "full"
-                      },{
-                        "type":"web_url",
-                        "url":"https://www.google.com/",
-                        "title":"2",
-                        "webview_height_ratio": "full"
-                      },{
-                        "type":"web_url",
-                        "url":"https://www.google.com/",
-                        "title":"3",
-                        "webview_height_ratio": "full"
                       }
                     ]
                     },
@@ -186,44 +176,6 @@ def switch_payload(payload):
                         "type":"web_url",
                         "url":"https://www.google.com/",
                         "title":"1",
-                        "webview_height_ratio": "full"
-                      },{
-                        "type":"web_url",
-                        "url":"https://www.google.com/",
-                        "title":"2",
-                        "webview_height_ratio": "full"
-                      },{
-                        "type":"web_url",
-                        "url":"https://www.google.com/",
-                        "title":"3",
-                        "webview_height_ratio": "full"
-                      }
-                    ]
-                    },
-                    {
-                    "title":"Welcome!",
-                    "image_url":"https://petersfancybrownhats.com/company_image.png",
-                    "subtitle":"We have the right hat for everyone.",
-                    "default_action": {
-                      "type": "web_url",
-                      "url": "https://petersfancybrownhats.com/view?item=103",
-                      "webview_height_ratio": "tall",
-                    },
-                    "buttons":[
-                      {
-                        "type":"web_url",
-                        "url":"https://www.google.com/",
-                        "title":"1",
-                        "webview_height_ratio": "full"
-                      },{
-                        "type":"web_url",
-                        "url":"https://www.google.com/",
-                        "title":"2",
-                        "webview_height_ratio": "full"
-                      },{
-                        "type":"web_url",
-                        "url":"https://www.google.com/",
-                        "title":"3",
                         "webview_height_ratio": "full"
                       }
                     ]
@@ -239,46 +191,47 @@ def switch_payload(payload):
           "quick_replies":[
               {
                 "content_type":"text",
-                "title":"A",
-                "payload":"a"
+                "title":"Asian",
+                "payload":"asian"
               },{
                 "content_type":"text",
-                "title":"B",
-                "payload":"b"
+                "title":"Baking",
+                "payload":"baking"
               },{
                 "content_type":"text",
-                "title":"C",
-                "payload":"c"
+                "title":"European",
+                "payload":"european"
               }
           ]
         }
     elif payload == 'art':
         pass
 
-    elif payload == 'a':
+    elif payload == 'asian':
         payload_json = {
             "attachment":{
               "type":"template",
               "payload":{
-                "template_type":"button",
-                "text":"under cooking card!",
-                "buttons":[
-                  {
-                    "type":"web_url",
-                    "url":"https://www.google.com/",
-                    "title":"URL Button",
-                    "webview_height_ratio": "full"
-                  },{
-                    "type":"web_url",
-                    "url":"https://www.google.com/",
-                    "title":"URL Button",
-                    "webview_height_ratio": "full"
-                  },{
-                    "type":"web_url",
-                    "url":"https://www.google.com/",
-                    "title":"URL Button",
-                    "webview_height_ratio": "full"
-                  }
+                "template_type":"generic",
+                "elements":[
+                    {
+                    "title":"https://www.justonecookbook.com/simple-chicken-curry/!",
+                    "image_url":"https://www.justonecookbook.com/wp-content/uploads/2013/03/Simple-Chicken-Curry.jpg",
+                    "subtitle":"We have the right hat for everyone.",
+                    "default_action": {
+                      "type": "web_url",
+                      "url": "https://www.justonecookbook.com/wp-content/uploads/2013/03/Simple-Chicken-Curry.jpg",
+                      "webview_height_ratio": "full",
+                    },
+                    "buttons":[
+                      {
+                        "type":"web_url",
+                        "url":"https://www.justonecookbook.com/simple-chicken-curry/",
+                        "title":"https://www.justonecookbook.com/simple-chicken-curry/",
+                        "webview_height_ratio": "full"
+                      }
+                    ]
+                    }
                 ]
               }
             }
