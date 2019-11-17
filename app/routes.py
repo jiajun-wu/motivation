@@ -237,4 +237,62 @@ def switch_payload(payload):
             }
         }
 
+    elif payload == 'baking':
+        payload_json = {
+            "attachment":{
+              "type":"template",
+              "payload":{
+                "template_type":"generic",
+                "elements":[
+                    {
+                    "title":"Chocolate Chip Cookies",
+                    "image_url":"https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
+                    "subtitle":"Crisp edges, chewy middles.",
+                    "default_action": {
+                      "type": "web_url",
+                      "url": "https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
+                      "webview_height_ratio": "full",
+                    },
+                    "buttons":[
+                      {
+                        "type":"web_url",
+                        "url":"https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/",
+                        "title":"Let's go!",
+                        "webview_height_ratio": "full"
+                      }
+                    ]
+                    },
+                    {
+                    "title":"chocolate cake",
+                    "image_url":"https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
+                    "subtitle":"Crisp edges, chewy middles.",
+                    "default_action": {
+                      "type": "web_url",
+                      "url": "https://www.allrecipes.com/recipe/17981/one-bowl-chocolate-cake-iii/",
+                      "webview_height_ratio": "full",
+                    }
+                    },
+                    {
+                    "title":"Chocolate Chip Cookies",
+                    "image_url":"https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
+                    "subtitle":"Crisp edges, chewy middles.",
+                    "default_action": {
+                      "type": "web_url",
+                      "url": "https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
+                      "webview_height_ratio": "full",
+                    },
+                    "buttons":[
+                      {
+                        "type":"web_url",
+                        "url":"https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/",
+                        "title":"Let's go!",
+                        "webview_height_ratio": "full"
+                      }
+                    ]
+                    }
+                ]
+              }
+            }
+        }
+
     return payload_json
