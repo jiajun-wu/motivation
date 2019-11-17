@@ -215,7 +215,7 @@ def switch_payload(payload):
                 "template_type":"generic",
                 "elements":[
                     {
-                    "title":"https://www.justonecookbook.com/simple-chicken-curry/!",
+                    "title":"Japanese Chicken Curry チキンカレー",
                     "image_url":"https://www.justonecookbook.com/wp-content/uploads/2013/03/Simple-Chicken-Curry.jpg",
                     "subtitle":"Delicious Japanese chicken curry recipe.",
                     "default_action": {
@@ -227,7 +227,7 @@ def switch_payload(payload):
                       {
                         "type":"web_url",
                         "url":"https://www.justonecookbook.com/simple-chicken-curry/",
-                        "title":"Japanese Chicken Curry チキンカレー",
+                        "title":"Let's go!",
                         "webview_height_ratio": "full"
                       }
                     ]
