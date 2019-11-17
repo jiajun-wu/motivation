@@ -276,7 +276,7 @@ def switch_payload(payload):
             }
 
         }
-    elif payload == 'pencil':
+    elif payload == 'painting':
         payload_json = {
             "attachment": {
                 "type": "template",
