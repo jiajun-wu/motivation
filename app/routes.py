@@ -263,7 +263,7 @@ def switch_payload(payload):
                         },
                         {
                             "title": "Portrait Drawing Basics 1/3 - How To Draw A Simple Head",
-                            "image_url": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjcnIeMh_DlAhWPuZ4KHf9XCawQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fportrait-drawing-fundamentals-made-simple%2F&psig=AOvVaw1H5VBsX3jwgftZeAIIj0Gy&ust=1574039198577580",
+                            "image_url": "https://i.ytimg.com/vi/wz5HDRMEF1E/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC6Wxe78OvQ_E_EqIr4G5ntgsaYqg",
                             "subtitle": "Learn to draw faces.",
                             "default_action": {
                                 "type": "web_url",
@@ -285,7 +285,7 @@ def switch_payload(payload):
                     "elements": [
                         {
                             "title": "How I'm Painting Simple Landscapes",
-                            "image_url": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwig95fEh_DlAhVPvJ4KHY2VCMQQjRx6BAgBEAQ&url=https%3A%2F%2Fforums.artrage.com%2Fshowthread.php%3F42448-a-simple-landscape&psig=AOvVaw25ogda5RVnHWYUG8g16MRe&ust=1574038937655783",
+                            "image_url": "https://i.ytimg.com/vi/anQ6ekGzB6s/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCvbWseinnhmbXq4_nqb-dp8g0DSg",
                             "subtitle": "Paint beautiful landscapes.",
                             "default_action": {
                                 "type": "web_url",
@@ -295,7 +295,7 @@ def switch_payload(payload):
                         },
                         {
                             "title": "How to Paint a Portrait in 7 Steps",
-                            "image_url": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjcnIeMh_DlAhWPuZ4KHf9XCawQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fportrait-drawing-fundamentals-made-simple%2F&psig=AOvVaw1H5VBsX3jwgftZeAIIj0Gy&ust=1574039198577580",
+                            "image_url": "https://i.ytimg.com/vi/EUeujbQRuU0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA-Q57lC8cx7djBg7h9TTiAUE2tyA",
                             "subtitle": "Learn to paint faces.",
                             "default_action": {
                                 "type": "web_url",
