@@ -322,7 +322,7 @@ def switch_payload(payload):
                             "subtitle": "Delicious Japanese chicken curry recipe.",
                             "default_action": {
                                 "type": "web_url",
-                                "url": "https://www.justonecookbook.com/wp-content/uploads/2013/03/Simple-Chicken-Curry.jpg",
+                                "url": "https://www.justonecookbook.com/simple-chicken-curry/",
                                 "webview_height_ratio": "full"
                             }
                         },
