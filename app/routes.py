@@ -72,7 +72,7 @@ def get_sender_id(in_text):
 def handleMessage(sender_psid, received_message):
     if (received_message.get('text')):
         # Create the payload for a basic text message
-        res_text = '{}! What do you want to learn? Please choose one!'.format(received_message.get('text'))
+        res_text = 'Hi! We are motivation! What do you want to learn? Please choose one!'.format(received_message.get('text'))
         response = {
           "text": res_text,
           "quick_replies":[
@@ -134,7 +134,7 @@ def callSendAPI(sender_psid, response):
 def switch_payload(payload):
     payload_json = ''
     if payload == 'music':
-        res_text = 'here we go for other options'
+        res_text = 'We got some instruments for you.'
         payload_json = {
           "text": res_text,
           "quick_replies":[
