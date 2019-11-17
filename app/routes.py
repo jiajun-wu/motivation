@@ -39,9 +39,9 @@ def webhook():
         if json_obj == 'page':
             entry = request.json.get('entry')
 
-            print('-----entry:', entry)
+            # print('-----entry:', entry)
 
-            print('request.json: ',request.json.get('object'))
+            # print('request.json: ',request.json.get('object'))
 
 
             for e in entry:
@@ -77,6 +77,10 @@ def handleMessage(sender_psid, received_message):
           "text": res_text,
           "quick_replies":[
               {
+                "content_type":"text",
+                "title":"Video",
+                "payload":"video"
+              },{
                 "content_type":"text",
                 "title":"Music",
                 "payload":"music"
@@ -146,7 +150,7 @@ def switch_payload(payload):
                     "subtitle":"We have the right hat for everyone.",
                     "default_action": {
                       "type": "web_url",
-                      "url": "https://petersfancybrownhats.com/view?item=103",
+                      "url": "/public/curry.jpg",
                       "webview_height_ratio": "tall",
                     },
                     "buttons":[
