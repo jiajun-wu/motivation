@@ -245,50 +245,34 @@ def switch_payload(payload):
                 "template_type":"generic",
                 "elements":[
                     {
-                    "title":"Chocolate Chip Cookies",
-                    "image_url":"https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
-                    "subtitle":"Crisp edges, chewy middles.",
-                    "default_action": {
-                      "type": "web_url",
-                      "url": "https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
-                      "webview_height_ratio": "full",
-                    },
-                    "buttons":[
-                      {
-                        "type":"web_url",
-                        "url":"https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/",
-                        "title":"Let's go!",
-                        "webview_height_ratio": "full"
-                      }
-                    ]
+                        "title":"Chocolate Chip Cookies",
+                        "image_url":"https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
+                        "subtitle":"Crisp edges, chewy middles.",
+                        "default_action": {
+                          "type": "web_url",
+                          "url": "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/",
+                          "webview_height_ratio": "full",
+                        }
                     },
                     {
-                    "title":"chocolate cake",
-                    "image_url":"https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
-                    "subtitle":"Crisp edges, chewy middles.",
-                    "default_action": {
-                      "type": "web_url",
-                      "url": "https://www.allrecipes.com/recipe/17981/one-bowl-chocolate-cake-iii/",
-                      "webview_height_ratio": "full",
-                    }
+                        "title":"chocolate cake",
+                        "image_url":"https://images.media-allrecipes.com/userphotos/720x405/708879.jpg",
+                        "subtitle":"This is a rich and moist chocolate cake. It only takes a few minutes to prepare the batter. Frost with your favorite chocolate frosting.",
+                        "default_action": {
+                          "type": "web_url",
+                          "url": "https://www.allrecipes.com/recipe/17981/one-bowl-chocolate-cake-iii/",
+                          "webview_height_ratio": "full",
+                        }
                     },
                     {
-                    "title":"Chocolate Chip Cookies",
-                    "image_url":"https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
-                    "subtitle":"Crisp edges, chewy middles.",
-                    "default_action": {
-                      "type": "web_url",
-                      "url": "https://images.media-allrecipes.com/userphotos/720x405/7238000.jpg",
-                      "webview_height_ratio": "full",
-                    },
-                    "buttons":[
-                      {
-                        "type":"web_url",
-                        "url":"https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/",
-                        "title":"Let's go!",
-                        "webview_height_ratio": "full"
-                      }
-                    ]
+                        "title":"Muffins",
+                        "image_url":"https://images.media-allrecipes.com/userphotos/720x405/7115277.jpg",
+                        "subtitle":"Crisp edges, chewy middles.",
+                        "default_action": {
+                          "type": "web_url",
+                          "url": "https://www.allrecipes.com/recipe/6874/best-ever-muffins/",
+                          "webview_height_ratio": "full",
+                        }
                     }
                 ]
               }
