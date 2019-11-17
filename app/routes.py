@@ -157,22 +157,21 @@ def switch_payload(payload):
                 "template_type":"generic",
                 "elements":[
                     {
-                        "title":"Maksim plays Original of Flight of the Bumble Bee",
-                        "image_url":"https://i.ytimg.com/vi/QM0p5bxWQnQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA6nn50ZiHY_XIIIrxZUZ2Xbo8F4w",
-                        "subtitle":"MAKSIM The World Premiere Performance.",
-                        "default_action": {
-                          "type": "web_url",
-                          "url": "https://youtu.be/h6A-JYbu1Os?t=12",
-                          "webview_height_ratio": "tall",
-                        }
-                    },
-                    {
                         "title":"Yiruma's Greatest Hits ~ Best Piano",
                         "image_url":"https://i.ytimg.com/vi/8Z5EjAmZS1o/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCYg-UGKZKc9p37VbUYn0eWZmjJTg",
                         "subtitle":"The Case for Christ (2017)",
                         "default_action": {
                           "type": "web_url",
                           "url": "https://youtu.be/8Z5EjAmZS1o",
+                          "webview_height_ratio": "tall",
+                        }
+                    },{
+                        "title":"Maksim plays Original of Flight of the Bumble Bee",
+                        "image_url":"https://i.ytimg.com/vi/QM0p5bxWQnQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA6nn50ZiHY_XIIIrxZUZ2Xbo8F4w",
+                        "subtitle":"MAKSIM The World Premiere Performance.",
+                        "default_action": {
+                          "type": "web_url",
+                          "url": "https://youtu.be/h6A-JYbu1Os?t=12",
                           "webview_height_ratio": "tall",
                         }
                     }
@@ -189,22 +188,21 @@ def switch_payload(payload):
                 "template_type":"generic",
                 "elements":[
                     {
-                        "title":"Top 40 Acoustic Guitar Covers Of Popular Songs",
-                        "image_url":"https://i.ytimg.com/vi/_UucPr2M-qU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLARWg_Q9276IibYjsH3PaAwLBVb1g",
-                        "subtitle":"Music can be magic and powerful, managing to touch our emotions.",
-                        "default_action": {
-                          "type": "web_url",
-                          "url": "https://youtu.be/_UucPr2M-qU",
-                          "webview_height_ratio": "tall",
-                        }
-                    },
-                    {
                         "title":"Señorita - Shawn Mendes, Camila Cabello - Cover (fingerstyle guitar) Andrew Foy",
                         "image_url":"https://i.ytimg.com/vi/FmsM9PbqN_I/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBExLJK5ltb5KEBaEjzbtOnPfOIsA",
                         "subtitle":"",
                         "default_action": {
                           "type": "web_url",
                           "url": "https://youtu.be/FmsM9PbqN_I",
+                          "webview_height_ratio": "tall",
+                        }
+                    },{
+                        "title":"Top 40 Acoustic Guitar Covers Of Popular Songs",
+                        "image_url":"https://i.ytimg.com/vi/_UucPr2M-qU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLARWg_Q9276IibYjsH3PaAwLBVb1g",
+                        "subtitle":"Music can be magic and powerful, managing to touch our emotions.",
+                        "default_action": {
+                          "type": "web_url",
+                          "url": "https://youtu.be/_UucPr2M-qU",
                           "webview_height_ratio": "tall",
                         }
                     }
