@@ -158,7 +158,7 @@ def switch_payload(payload):
                         "subtitle":"The Case for Christ (2017)",
                         "default_action": {
                           "type": "web_url",
-                          "url": "https://youtu.be/8Z5EjAmZS1o",
+                          "url": "https://www.youtube.com/watch?v=8Z5EjAmZS1o",
                           "webview_height_ratio": "tall",
                         }
                     },{
@@ -167,7 +167,7 @@ def switch_payload(payload):
                         "subtitle":"MAKSIM The World Premiere Performance.",
                         "default_action": {
                           "type": "web_url",
-                          "url": "https://youtu.be/h6A-JYbu1Os?t=12",
+                          "url": "https://www.youtube.com/watch?v=h6A-JYbu1Os&t=12",
                           "webview_height_ratio": "tall",
                         }
                     }
@@ -189,7 +189,7 @@ def switch_payload(payload):
                         "subtitle":"",
                         "default_action": {
                           "type": "web_url",
-                          "url": "https://youtu.be/FmsM9PbqN_I",
+                          "url": "https://www.youtube.com/watch?v=FmsM9PbqN_I",
                           "webview_height_ratio": "tall",
                         }
                     },{
@@ -198,7 +198,7 @@ def switch_payload(payload):
                         "subtitle":"Music can be magic and powerful, managing to touch our emotions.",
                         "default_action": {
                           "type": "web_url",
-                          "url": "https://youtu.be/_UucPr2M-qU",
+                          "url": "https://www.youtube.com/watch?v=_UucPr2M-qU",
                           "webview_height_ratio": "tall",
                         }
                     }
