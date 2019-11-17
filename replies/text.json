@@ -1,58 +1,57 @@
 {
-  "get started" : {
-    "greeting" :"Hello {(user_firstName)}! Welcome to Motivate!",
-    "help" : "How can I motivate you today?"
+  "get started": {
+    "greeting": "Hello {(user_firstName)}! Welcome to Motivate!",
+    "help": "How can I motivate you today?"
   },
-  "curation" :{
-    "prompt" : "what would you like to learn today?",
-    "music" : "That's cool! Let's see what we can do.",
-    "cooking" : "That's cool! Let's see what we can do.",
-    "art" : "That's cool! Let's see what we can do.",
-    
-    "instrument" : "What instrument would you like to learn?",
-    "culture" : "What culture of food would you like to cook?",
-    "style" : "what kind of art would you like to do?"
+  "curation": {
+    "prompt": "what would you like to learn today?",
+    "music": "That's cool! Let's see what we can do.",
+    "instrument": "What instrument would you like to learn?",
+    "cooking": "That's cool! Let's see what we can do.",
+    "culture": "What culture of food would you like to cook?",
+    "art": "That's cool! Let's see what we can do.",
+    "style": "What kind of art would you like to do?",
+    "piano": "Piano",
+    "guitar": "Guitar",
+    "asian": "Asian",
+    "european": "European",
+    "american": "American",
+    "pencil": "Pencil",
+    "paint": "Paint"
   },
-  "list": "Here is a list of things you could do",
-  "piano": {
-    "title" : "Trending piano tutorials",
-    "p_tutorial1": "stuff",
-    "p_tutorial2": "stuff",
-    "p_tutorial3": "stuff"
-  },
-  "guitar": {
-    "title" : "Trending guitar tutorials",
-    "g_tutorial1": "stuff",
-    "g_tutorial2": "stuff",
-    "g_tutorial3": "stuff"
-  },
-  "asian": {
-    "title" : "Trending Asian recipes",
-    "as_recipe1": "stuff",
-    "as_recipe2": "stuff",
-    "as_recipe3": "stuff"
-  },
-  "european": {
-    "title" : "Trending Asian recipes",
-    "i_recipe1": "stuff",
-    "i_recipe2": "stuff",
-    "i_recipe3": "stuff"
-  },
-  "american": {
-    "title" : "Trending Asian recipes",
-    "am_recipe1": "stuff",
-    "am_recipe2": "stuff",
-    "am_recipe3": "stuff"
-  },
-  "pencil": {
-    "title" : "Trending pencil drawings",
-    "p_tutorialPortrait": "stuff",
-    "p_tutorialLandscape": "stuff"
-  },
-  "paint": {
-    "title" : "Trending painting tutorials",
-    "l_tutorialPortrait": "stuff",
-    "l_tutorialLandscape": "stuff"
-  }
- 
+
+
+  "p_tutorial1": "stuff",
+  "p_tutorial2": "stuff",
+  "p_tutorial3": "stuff",
+
+
+  "g_tutorial1": "stuff",
+  "g_tutorial2": "stuff",
+  "g_tutorial3": "stuff",
+
+
+  "as_recipe1": "stuff",
+  "as_recipe2": "stuff",
+  "as_recipe3": "stuff",
+
+
+  "e_recipe1": "stuff",
+  "e_recipe2": "stuff",
+  "e_recipe3": "stuff",
+
+
+  "am_recipe1": "stuff",
+  "am_recipe2": "stuff",
+  "am_recipe3": "stuff",
+
+
+  "p_tutorialPortrait": "stuff",
+  "p_tutorialLandscape": "stuff",
+
+
+  "l_tutorialPortrait": "stuff",
+  "l_tutorialLandscape": "stuff"
+
+
 }
