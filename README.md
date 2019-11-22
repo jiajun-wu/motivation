@@ -2,7 +2,7 @@
 
 
 
---- A Facebook Messanger Bot that motivates you to be productive and forget about the depression.
+--- A Facebook Messanger Bot that encourages healthy and productive habits.
 
 Facebook [Page](https://www.facebook.com/Motivation-110330053759491) and the [demo](https://www.facebook.com/110330053759491/videos/462285154640181/?__xts__%5B0%5D=68.ARDaRL8FVSvj0M3M14nGZsIiFqcYysolKibt-zQsHofye17lWdS21v4HmAWcoxd70hjPj96FBMLd9sNY5ScJ4AMkvXyvCAoVCACy0pVzB3YlV3GFH4uHZKF9XQ3eBFHuFrKCchHsk5N2P6B5m1KqvnCvYTdYOB9rUL2YCpmH-xPwbH3HJ7A_jaccHgxSsthnt9NMRinbafO-JKh0mISmY9-0omKhkDzOtOKFlMCeVI_iDZthy7mamRnHGLbFVVEqvUCHIoD8omOOQKXiC7lFWBtHXNgtHw32FDkICn9v2z6-_fJ1pVrQkgktW3DI2IE1h8gxxR-vwXhJPFY&__tn__=-R)
 
